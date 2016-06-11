@@ -23,8 +23,9 @@ However, the ``jar`` file can also be built from source::
 
     ./gradlew fatJar
 
-The output jar file can be found in ``build/libs/`` and need to be hosted on
-your own.
+The output jar file can be found in ``build/libs/``. To run the service use::
+
+   bin/start.sh
 
 Running service in Docker container
 -----------------------------------
@@ -34,10 +35,10 @@ All you have to do is to run command below::
 
     docker run -p 5555:5555 -d aslanbekirov/fibonacci-service 
 
-If you want to build your own image, I have provided ``Dockerfile`` . Use command below to build your own image, but before that you must follow steps described in ``Build from source``
+If you want to build your own image, I have provided ``Dockerfile`` . Use command below to build your own image, but before that you must follow steps described in ``Build from source`` section.
 command::
 
-    docker build -t imageName
+    docker build -t imageName .
 
 API Usage
 =========
