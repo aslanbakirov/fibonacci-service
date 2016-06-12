@@ -25,7 +25,7 @@ public class FibonacciRestApi {
 
     @GET
     @Path("/fibonacci/{type}/{number}")
-    public Response clusterIndex(@Context UriInfo uriInfo , @PathParam("number") int number, @PathParam("type") String type) {
+    public Response fibonacciSeries(@Context UriInfo uriInfo , @PathParam("number") int number, @PathParam("type") String type) {
         final List<Integer> result;
         final String calculationType = type;
 

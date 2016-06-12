@@ -32,6 +32,7 @@ ext {
 
     // utils
     log4jVersion="1.7.12"
+    jsonVersion="20090211"
 
 }
 
@@ -41,6 +42,7 @@ dependencies {
     compile "org.apache.httpcomponents:httpclient:$apacheHttpClientVersion"
     compile "org.apache.commons:commons-io:$apacheCommonIOVersion"
     compile "org.apache.commons:commons-lang3:$apacheCommonLang3Version"
+    compile group: 'org.json', name: 'json', version: '20141113'
     compile "org.slf4j:slf4j-log4j12:$log4jVersion"
     testCompile "org.hamcrest:hamcrest-all:$hamcrestAllVersion"
     testCompile ("junit:junit:$junitVersion") {

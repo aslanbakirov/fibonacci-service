@@ -39,8 +39,7 @@ public class Main {
     }
 
     public static String host() {
-        return  ObjectUtils.firstNonNull(System.getenv("LIBPROCESS_IP"),
-                System.getenv("HOST"),
+        return  ObjectUtils.firstNonNull(System.getenv("HOST"),
                 System.getenv("MESOS_HOSTNAME"),
                 currentHost());
     }
